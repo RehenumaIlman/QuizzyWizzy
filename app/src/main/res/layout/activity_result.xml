@@ -1,0 +1,73 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5D4">
+
+    <!-- CardView to give a rounded rectangle effect -->
+<androidx.cardview.widget.CardView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="24dp"
+android:layout_centerInParent="true"
+app:cardCornerRadius="16dp"
+app:cardElevation="8dp"
+android:layout_marginTop="48dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="664dp"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Badge Image -->
+    <ImageView
+        android:id="@+id/badgeImage"
+        android:layout_width="291dp"
+        android:layout_height="253dp"
+        android:contentDescription="@string/badge_image"
+        android:src="@drawable/badge" />
+
+    <!-- Congratulations Message -->
+    <TextView
+        android:id="@+id/congratsMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Congratulations"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Subtext Message -->
+    <TextView
+        android:id="@+id/subtextMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="You did a great job in the test!"
+        android:textColor="#888888"
+        android:textSize="16sp" />
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4A90E2"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="Continue"
+        android:textColor="#FFFFFF" />
+       </LinearLayout>
+     </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+
